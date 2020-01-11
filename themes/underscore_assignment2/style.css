@@ -54,11 +54,112 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
+
+body{
+    font-family: Arial;
+    font-size:15px;
+    color:#333;
+    background:#000;
+    margin:0;
+    padding:0;
+    line-height: 1.7em;
+} 
+header{
+    background: #37415F;
+    color:#fff;
+    padding:10px 10px;
+} 
+header h1{
+    color:#fff;
+    margin:0;
+    padding:0; 
+    padding-bottom: 10px;
+	font-size: 3em;
+}
+.main{
+    margin:15px 0;
+    float:left;
+    width:68%; 
+}
+.container{
+    width:1020px;
+    margin:0 auto;
+    overflow: auto;
+}
+.sidebar{
+    float:right;
+    width:28%;
+} 
+.clr{
+    clear:both;
+}
+.side-widget{
+    border:1px #ccc solid;
+    padding:10px 10px;
+    margin-bottom:20px;
+    margin-top:20px;
+}
+.side-widget li{
+    list-style: none;
+    line-height:2.2em;
+    border-bottom:dotted 1px #ccc;
+} 
+.side-widget a{
+    text-decoration: none;
+}
+footer{
+    background: #37415F;
+    color:#fff;
+    padding:10px 10px;
+    text-align: center;
+}
+
 html {
 	line-height: 1.15; /* 1 */
 	-webkit-text-size-adjust: 100%; /* 2 */
 }
-
+a{
+    color:#333;
+ } 
+article.post{
+    border-bottom:1px #ccc solid;
+    overflow:hidden;
+} 
+a.button{
+    display:inline-block;
+    background:#37415F;
+    color:#fff;
+    padding:10px 5px;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+.meta{
+    background:#586486;
+    color:#fff;
+    padding:5px;
+}
+.post-thumbnail img{
+    width:100%;
+    height:auto;
+}
+.main-nav{
+    background:#6474A4;
+    color:#fff;
+    padding:15px;
+} 
+.main-nav ul{
+    margin:0;
+    padding:0;
+} 
+.main-nav li{
+    list-style:none;
+    float:left;
+    padding-right:15px;
+} 
+.main-nav a{
+    color:#fff;
+    text-decoration:none;
+}
 /* Sections
 	 ========================================================================== */
 
@@ -66,8 +167,14 @@ html {
  * Remove the margin in all browsers.
  */
 
-body {
-	margin: 0;
+body{
+    font-family: Arial;
+    font-size:15px;
+    color:#333;
+    background:#000;
+    margin:0;
+    padding:0;
+    line-height: 1.7em;
 }
 
 /**
@@ -614,12 +721,10 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-	color: royalblue;
+	color: gray;
 }
 
-a:visited {
-	color: purple;
-}
+
 
 a:hover, a:focus, a:active {
 	color: midnightblue;
@@ -983,3 +1088,4 @@ object {
 .gallery-caption {
 	display: block;
 }
+

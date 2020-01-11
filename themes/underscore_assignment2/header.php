@@ -6,53 +6,34 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package Underscore_assignment2
+ * @package Assignment2
  */
 
 ?>
-<!doctype html>
+<!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="profile" href="https://gmpg.org/xfn/11">
-
-	<?php wp_head(); ?>
+    <meta charset="<?php bloginfo('charset'); ?>">
+    <title><?php bloginfo('name'); ?></title>
+    <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
+    <?php wp_head(); ?> 
 </head>
+<body>
+	
+<header>
+    <div class ="container">
+        <h1><?php bloginfo('name'); ?></h1>
+        <span><?php bloginfo('description'); ?></span>
+    </div>
+</header>
 
-<body <?php body_class(); ?>>
-<div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'underscore_assignment2' ); ?></a>
-
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$underscore_assignment2_description = get_bloginfo( 'description', 'display' );
-			if ( $underscore_assignment2_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $underscore_assignment2_description; /* WPCS: xss ok. */ ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
-
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'underscore_assignment2' ); ?></button>
-			<?php
-			wp_nav_menu( array(
-				'theme_location' => 'menu-1',
-				'menu_id'        => 'primary-menu',
-			) );
-			?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
-
-	<div id="content" class="site-content">
+<nav class="main-nav">
+    <div class="container">
+    <?php
+        $args = array(
+            'theme_location' => 'primary'
+        );
+    ?>
+    <?php wp_nav_menu($args); ?>
+    </div>
+</nav>
