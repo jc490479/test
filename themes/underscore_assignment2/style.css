@@ -1,5 +1,5 @@
 /*!
-Theme Name: Underscore_assignment2
+Theme Name: Assignment2
 Theme URI: http://underscores.me/
 Author: Underscores.me
 Author URI: http://underscores.me/
@@ -7,13 +7,13 @@ Description: Description
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
-Text Domain: underscore_assignment2
+Text Domain: assignment2
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 
-Underscore_assignment2 is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+Assignment2 is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 Normalizing styles have been helped along thanks to the fine work of
@@ -53,7 +53,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-
 
 body{
     font-family: Arial;
@@ -108,7 +107,7 @@ header h1{
     text-decoration: none;
 }
 footer{
-    background: #222222;
+    background: #37415F;
     color:#fff;
     padding:10px 10px;
     text-align: center;
@@ -1088,4 +1087,3 @@ object {
 .gallery-caption {
 	display: block;
 }
-
