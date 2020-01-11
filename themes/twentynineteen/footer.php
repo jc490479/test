@@ -25,7 +25,7 @@
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'twentynineteen' ) ); ?>" class="imprint">
 				<?php
 				/* translators: %s: WordPress. */
-				printf( __( 'Proudly powered by %s.', 'twentynineteen' ), 'CMS footer change' );
+				printf( __( 'Proudly powered by %s.', 'twentynineteen' ), 'CMS footer change2' );
 				?>
 			</a>
 			<?php
